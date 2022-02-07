@@ -32,6 +32,9 @@ noremap <F8> :%y+<CR>
 
 set textwidth=0 wrapmargin=0
 
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+let g:vim_jsx_pretty_colorful_config = 1
+
 call plug#begin()
 
 Plug 'morhetz/gruvbox'
@@ -39,12 +42,16 @@ Plug 'morhetz/gruvbox'
 " languages syntax highlight
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
+Plug 'maxmellon/vim-jsx-pretty'
 Plug 'tikhomirov/vim-glsl'
 Plug 'jonsmithers/vim-html-template-literals'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --production' }
 
 " autocomplete
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 Plug 'jiangmiao/auto-pairs'
+Plug 'alvan/vim-closetag'  "for html/jsx tags
+
 
 " fuzzy finder and file manager
 Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
@@ -104,4 +111,3 @@ au BufNewFile,BufRead *.tsx, *.jsx, *.js, *.html, *.css
     \  set tabstop=2
     \| set softtabstop=2
     \| set shiftwidth=2
-
