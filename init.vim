@@ -3,6 +3,7 @@ set mouse=a
 
 set t_Co=256   " This is may or may not needed."
 set background=dark
+let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 
 set encoding=utf-8
