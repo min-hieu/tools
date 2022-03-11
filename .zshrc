@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/charlie/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -140,6 +140,6 @@ alias ibsNotebook="ssh -p 4022 charlie@203.247.189.192 -N -L localhost:49696:loc
 
 alias cs206="cd ~/Desktop/CS206"
 alias cs311="cd ~/Desktop/CS311"
-alias sshorg="ssh ubuntu@172.10.8.157"
+alias sshorg="ssh ubuntu@172.10.5.39"
 alias cs320="cd ~/Desktop/CS320"
 alias cs442="cd ~/Desktop/CS442"
