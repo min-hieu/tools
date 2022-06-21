@@ -6,6 +6,7 @@ set background=dark
 let g:gruvbox_contrast_dark='hard'
 colorscheme gruvbox
 
+
 set encoding=utf-8
 
 set wrap!
@@ -50,9 +51,6 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install --frozen-lockfile --producti
 
 " autocomplete
 Plug 'neoclide/coc.nvim', { 'branch': 'release' }
-Plug 'jiangmiao/auto-pairs'
-Plug 'alvan/vim-closetag'  "for html/jsx tags
-
 
 " fuzzy finder and file manager
 Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
