@@ -55,7 +55,6 @@ Plug 'neoclide/coc.nvim', { 'branch': 'release' }
 " fuzzy finder and file manager
 Plug 'junegunn/fzf', {'do': { -> fzf#install() }}
 Plug 'junegunn/fzf.vim'
-Plug 'kien/ctrlp.vim'
 
 " powerline and powerline themes
 Plug 'vim-airline/vim-airline'
@@ -65,7 +64,8 @@ call plug#end()
 
 nmap <leader>gd <Plug>(coc-definition)
 nmap <leader>gr <Plug>(coc-references)
-nnoremap <C-p> :GFiles<CR>
+nnoremap <C-p> :Files<CR>
+nnoremap <C-P> :Buffer<CR>
 
 " use <tab> for trigger completion and navigate to the next complete item
 function! s:check_back_space() abort
